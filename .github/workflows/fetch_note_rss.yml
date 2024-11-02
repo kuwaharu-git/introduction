@@ -1,0 +1,46 @@
+name: Fetch Note RSS Feed
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"  # 3時間ごとに実行
+  workflow_dispatch: # 手動実行のためのオプション
+
+jobs:
+  fetch-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch Note RSS and generate JSON
+        run: |
+          curl -s https://note.com/kuwaharu/rss | \
+          xmllint --format - | \
+          python3 -c "
+import sys, json
+import xml.etree.ElementTree as ET
+
+tree = ET.parse(sys.stdin)
+root = tree.getroot()
+ns = {'': 'http://purl.org/rss/1.0/'}
+articles = [
+    {
+        'title': item.find('title').text,
+        'link': item.find('link').text,
+        'pubDate': item.find('pubDate').text
+    }
+    for item in root.findall('.//item')
+]
+with open('note_articles.json', 'w') as f:
+    json.dump(articles, f, ensure_ascii=False, indent=2)
+" 
+
+      - name: Commit and push JSON file
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add note_articles.json
+          git commit -m "Update Note articles JSON"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
