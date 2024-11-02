@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Pythonがエラーを出さずに終了した時に原因を調べる(faulthandlerモジュール)",
+    "link": "https://note.com/kuwaharu/n/nc7f692b8204d",
+    "published": "Sat, 02 Nov 2024 14:30:11 +0900",
+    "summary": "<p id=\"8e9d9b08-ec8e-4389-903d-20b8b0978c4c\" name=\"8e9d9b08-ec8e-4389-903d-20b8b0978c4c\">pythonで外部ライブラリ（特にCで書かれたもの）を使用していると、python自体がキャッチできないエラーが起き、何も表示されずに異常終了することがあります。私の場合mysql-connector-pythonを使用した時に起こりました。</p><p id=\"770c4382-494d-4e46-8ecb-716f965876cc\" name=\"770c4382-494d-4e46-8ecb-716f965876cc\">そのような時に役に立つのが標準ライブライのfaulthandlerモジュールです。</p><br /><a href=\"https://note.com/kuwaharu/n/nc7f692b8204d\">続きをみる</a>",
+    "creator_name": "",
+    "creator_image": ""
+  },
+  {
+    "title": "Python ModuleNotFoundErrorの解決方法",
+    "link": "https://note.com/kuwaharu/n/nf3ebd9f9ba4a",
+    "published": "Wed, 23 Oct 2024 16:15:49 +0900",
+    "summary": "<pre id=\"1579d515-83a5-4d41-95b9-9735c22f5996\" name=\"1579d515-83a5-4d41-95b9-9735c22f5996\"><code>ModuleNotFoundError: No module named 〇〇〇</code></pre><p id=\"13b85028-2776-4992-96ba-d0d06e96385f\" name=\"13b85028-2776-4992-96ba-d0d06e96385f\">今回はPythonのこのエラーの解決方法を原因も含めいくつか紹介します。</p><br /><a href=\"https://note.com/kuwaharu/n/nf3ebd9f9ba4a\">続きをみる</a>",
+    "creator_name": "",
+    "creator_image": ""
+  },
+  {
+    "title": "情報処理安全確保支援士受験報告",
+    "link": "https://note.com/kuwaharu/n/n7cd3e8d12c9f",
+    "published": "Tue, 15 Oct 2024 14:32:34 +0900",
+    "summary": "<p id=\"99b9752d-786c-4c26-9054-1979c4b50334\" name=\"99b9752d-786c-4c26-9054-1979c4b50334\">2024年10月13日、情報処理安全確保支援士の試験を受験してきました。前回の春期試験で応用情報技術者試験に合格していたので午前Iは免除で、午前IIから受験しました。</p><h2 id=\"f16cdfb6-b159-410b-a5e6-36624271d6c2\" name=\"f16cdfb6-b159-410b-a5e6-36624271d6c2\">午前Ⅱ自己採点結果</h2><br /><a href=\"https://note.com/kuwaharu/n/n7cd3e8d12c9f\">続きをみる</a>",
+    "creator_name": "",
+    "creator_image": ""
+  },
+  {
+    "title": "失敗談 sshコマンドでは接続できるのにvscodeで接続ができない場合の対処(mac)",
+    "link": "https://note.com/kuwaharu/n/nd4f50a0c0408",
+    "published": "Mon, 14 Oct 2024 15:11:19 +0900",
+    "summary": "<p id=\"590aaccb-cf07-4c44-be97-4da6740cbc15\" name=\"590aaccb-cf07-4c44-be97-4da6740cbc15\">自分でも何故このようなことが起きたかわからないのですがもしかしたら同じ現象で困る人がいるかもしれないので一応記事に…</p><h2 id=\"2479b48c-ae49-4e6f-8880-491d608c948a\" name=\"2479b48c-ae49-4e6f-8880-491d608c948a\">結論</h2><br /><a href=\"https://note.com/kuwaharu/n/nd4f50a0c0408\">続きをみる</a>",
+    "creator_name": "",
+    "creator_image": ""
+  },
+  {
+    "title": "備忘録: VSCode Better Jinjaの設定",
+    "link": "https://note.com/kuwaharu/n/ne96f5bd82b5e",
+    "published": "Thu, 10 Oct 2024 10:37:55 +0900",
+    "summary": "<h2 id=\"172f021a-b584-4944-8dcb-3f9fbf82561b\" name=\"172f021a-b584-4944-8dcb-3f9fbf82561b\">HTMLの補完機能を保持しつつ、Better Jinjaの構文ハイライトも利用できるように、両方の機能を併用する設定の方法</h2><h3 id=\"1517dfd5-637f-4f0b-960e-3d18bfff8f9a\" name=\"1517dfd5-637f-4f0b-960e-3d18bfff8f9a\">プロジェクトフォルダ/.vscode/settings.json に</h3><br /><a href=\"https://note.com/kuwaharu/n/ne96f5bd82b5e\">続きをみる</a>",
+    "creator_name": "",
+    "creator_image": ""
+  }
+]
