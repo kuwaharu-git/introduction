@@ -30,7 +30,7 @@
     </div>
 
     <script>
-        fetch('https://kuwaharu-git.github.io/introduction/latest_articles.json')
+        fetch('https://www.kuwaharu.com/latest_articles.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error("ネットワークエラー: " + response.status);
