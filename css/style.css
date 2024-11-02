@@ -63,3 +63,41 @@ body {
 .social-link:hover {
     color: #0056b3;
 }
+
+.latest-articles {
+    margin-top: 20px; /* プロフィールと記事の間にスペースを作る */
+}
+
+.latest-articles h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px; /* タイトルの下にスペース */
+}
+
+.latest-articles ul {
+    list-style-type: none; /* デフォルトのリストスタイルを削除 */
+    padding: 0; /* パディングを削除 */
+    margin: 0; /* マージンを削除 */
+}
+
+.latest-articles li {
+    background-color: #fff; /* 各記事を白い背景に */
+    padding: 10px; /* 内側のスペースを追加 */
+    margin: 5px 0; /* 各記事の間に垂直のマージンを追加 */
+    border-radius: 5px; /* 角を丸める */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 軽い影をつける */
+    transition: transform 0.2s; /* ホバー時のアニメーションを追加 */
+}
+
+.latest-articles li:hover {
+    transform: scale(1.02); /* ホバー時に少し大きくする */
+}
+
+.latest-articles a {
+    text-decoration: none; /* リンクの下線を削除 */
+    color: #007BFF; /* リンクの色 */
+}
+
+.latest-articles a:hover {
+    text-decoration: underline; /* ホバー時に下線を追加 */
+}
