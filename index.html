@@ -16,12 +16,38 @@
             <h1 class="name">kuwaharu</h1>
             <p class="bio">システムエンジニアになるために色々勉強中の学生です。得意言語はPython。フロント、バックどちらも勉強中。その他AWSや電子工作など。資格はiパス、FE、AP取得。</p>
             <div class="social-links">
-                <a href="https://x.com/kuwaharu_it" class="social-link"><i class="fa-brands fa-x-twitter"></i> </a>
+                <a href="https://x.com/kuwaharu_it" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://www.instagram.com/kuwaharu617" class="social-link"><i class="fab fa-instagram"></i></a>
                 <a href="https://note.com/kuwaharu" class="social-link"><i class="fas fa-sticky-note"></i></a>
                 <a href="https://github.com/kuwaharu-git" class="social-link"><i class="fab fa-github"></i></a>
             </div>
         </div>
+
+        <div class="latest-articles">
+            <h2>最新Note記事</h2>
+            <div id="note-articles"></div>
+        </div>
     </div>
+
+    <script>
+        fetch('https://[ユーザー名].github.io/[リポジトリ名]/note_articles.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("ネットワークエラー: " + response.status);
+                }
+                return response.json();
+            })
+            .then(data => {
+                let html = "<ul>";
+                data.forEach((article, index) => {
+                    if (index < 5) { // 表示する記事数を制限
+                        html += `<li><a href="${article.link}" target="_blank">${article.title}</a> (${new Date(article.pubDate).toLocaleDateString()})</li>`;
+                    }
+                });
+                html += "</ul>";
+                document.getElementById("note-articles").innerHTML = html;
+            })
+            .catch(error => console.error("記事の取得に失敗しました:", error));
+    </script>
 </body>
 </html>
