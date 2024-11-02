@@ -49,7 +49,7 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add latest_articles.json
         git commit -m 'Add latest articles from RSS feed'
-          git push
+            git push
   
       - name: Install Git
         run: sudo apt-get install git
