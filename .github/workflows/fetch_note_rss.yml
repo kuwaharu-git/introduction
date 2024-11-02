@@ -22,34 +22,14 @@ jobs:
       run: pip install feedparser
 
     - name: Fetch RSS and save as JSON
-      run: |
-        import feedparser
-        import json
-
-        RSS_URL = "https://note.com/kuwaharu/rss"
-        MAX_ITEMS = 5
-
-        feed = feedparser.parse(RSS_URL)
-        articles = []
-
-        for entry in feed.entries[:MAX_ITEMS]:
-            articles.append({
-                "title": entry.title,
-                "link": entry.link,
-                "published": entry.published,
-                "summary": entry.summary
-            })
-
-        with open('latest_articles.json', 'w') as f:
-            json.dump(articles, f, ensure_ascii=False, indent=2)
-
-    - name: Install Git
-      run: sudo apt-get install git
+      run: python fetch_rss.py
 
     - name: Commit and push JSON file
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add latest_articles.json
-        git commit -m 'Add latest articles from RSS feed'
+        git commit -m 'Add latest articles from RSS feed' || echo "No changes to commit"
         git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
