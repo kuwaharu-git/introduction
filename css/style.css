@@ -95,7 +95,7 @@ body {
 
 .latest-articles a {
     text-decoration: none; /* リンクの下線を削除 */
-    color: #007BFF; /* リンクの色 */
+    color: #666; /* リンクの色 */
 }
 
 .latest-articles a:hover {
