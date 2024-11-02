@@ -25,22 +25,22 @@ jobs:
           curl -s https://note.com/kuwaharu/rss | \
           xmllint --format - | \
 python3 -c "
-  import sys, json
-  import xml.etree.ElementTree as ET
+import sys, json
+import xml.etree.ElementTree as ET
 
-  tree = ET.parse(sys.stdin)
-  root = tree.getroot()
-  ns = {'': 'http://purl.org/rss/1.0/'}
-  articles = [
-      {
-          'title': item.find('title').text,
-          'link': item.find('link').text,
-          'pubDate': item.find('pubDate').text
-      }
-      for item in root.findall('.//item')
-  ]
-  with open('note_articles.json', 'w', encoding='utf-8') as f:
-      json.dump(articles, f, ensure_ascii=False, indent=2)
+tree = ET.parse(sys.stdin)
+root = tree.getroot()
+ns = {'': 'http://purl.org/rss/1.0/'}
+articles = [
+    {
+        'title': item.find('title').text,
+        'link': item.find('link').text,
+        'pubDate': item.find('pubDate').text
+    }
+    for item in root.findall('.//item')
+]
+with open('note_articles.json', 'w', encoding='utf-8') as f:
+    json.dump(articles, f, ensure_ascii=False, indent=2)
 "
 
       - name: Commit and push JSON file
