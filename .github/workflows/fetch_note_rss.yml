@@ -50,6 +50,5 @@ jobs:
         git add latest_articles.json
         git commit -m 'Add latest articles from RSS feed'
         git push
-      env:
-        - name: Install Git
-          run: sudo apt-get install git
+      - name: Install Git
+        run: sudo apt-get install git
