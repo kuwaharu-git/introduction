@@ -12,6 +12,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install xmllint
+        run: sudo apt-get install -y libxml2-utils
+
       - name: Fetch Note RSS and generate JSON
         run: |
           curl -s https://note.com/kuwaharu/rss | \
@@ -31,16 +39,16 @@ articles = [
     }
     for item in root.findall('.//item')
 ]
-with open('note_articles.json', 'w') as f:
+with open('note_articles.json', 'w', encoding='utf-8') as f:
     json.dump(articles, f, ensure_ascii=False, indent=2)
-" 
+"
 
       - name: Commit and push JSON file
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add note_articles.json
-          git commit -m "Update Note articles JSON"
+          git commit -m "Update Note articles JSON" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
