@@ -41,7 +41,7 @@
                 let html = "<ul>";
                 data.forEach((article, index) => {
                     if (index < 5) { // 表示する記事数を制限
-                        html += `<li><a href="${article.link}" target="_blank">${article.title}</a> (${new Date(article.pubDate).toLocaleDateString()})</li>`;
+                        html += `<li><a href="${article.link}" target="_blank">${article.title}</a> (${new Date(article.published).toLocaleDateString()})</li>`;
                     }
                 });
                 html += "</ul>";
