@@ -32,7 +32,10 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add latest_articles.json
-        git commit -m 'Add latest articles from RSS feed' || echo "No changes to commit"
+        git commit -m 'Add note latest articles from RSS feed' || echo "No changes to commit"
+        git push
+        git add my_blog_latest_articles.json
+        git commit -m 'Add my-blog latest articles from RSS feed' || echo "No changes to commit"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
