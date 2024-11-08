@@ -1,5 +1,13 @@
 [
   {
+    "title": "Next.jsで自作ブログを作る①",
+    "link": "https://note.com/kuwaharu/n/n07b0630682de",
+    "published": "Fri, 08 Nov 2024 00:17:53 +0900",
+    "summary": "<h2 id=\"6179a4a0-e9d7-4a02-9322-06d8b4784474\" name=\"6179a4a0-e9d7-4a02-9322-06d8b4784474\">ブログを自作しようと思った経緯</h2><p id=\"87cfba8c-1614-459a-b33c-b7287f713d0f\" name=\"87cfba8c-1614-459a-b33c-b7287f713d0f\">こちらの記事を拝見して書こうと思いました。<br />reactを少し学んで何か公開できるものを作りたいと思っていて普段noteで書いている記事を自作ブログで公開できたら面白いし自分の技術をアピールするのにとてもいいと思いました。</p><br /><a href=\"https://note.com/kuwaharu/n/n07b0630682de\">続きをみる</a>",
+    "creator_name": "",
+    "creator_image": ""
+  },
+  {
     "title": "Pythonがエラーを出さずに終了した時に原因を調べる(faulthandlerモジュール)",
     "link": "https://note.com/kuwaharu/n/nc7f692b8204d",
     "published": "Sat, 02 Nov 2024 14:30:11 +0900",
@@ -28,14 +36,6 @@
     "link": "https://note.com/kuwaharu/n/nd4f50a0c0408",
     "published": "Mon, 14 Oct 2024 15:11:19 +0900",
     "summary": "<p id=\"590aaccb-cf07-4c44-be97-4da6740cbc15\" name=\"590aaccb-cf07-4c44-be97-4da6740cbc15\">自分でも何故このようなことが起きたかわからないのですがもしかしたら同じ現象で困る人がいるかもしれないので一応記事に…</p><h2 id=\"2479b48c-ae49-4e6f-8880-491d608c948a\" name=\"2479b48c-ae49-4e6f-8880-491d608c948a\">結論</h2><br /><a href=\"https://note.com/kuwaharu/n/nd4f50a0c0408\">続きをみる</a>",
-    "creator_name": "",
-    "creator_image": ""
-  },
-  {
-    "title": "備忘録: VSCode Better Jinjaの設定",
-    "link": "https://note.com/kuwaharu/n/ne96f5bd82b5e",
-    "published": "Thu, 10 Oct 2024 10:37:55 +0900",
-    "summary": "<h2 id=\"172f021a-b584-4944-8dcb-3f9fbf82561b\" name=\"172f021a-b584-4944-8dcb-3f9fbf82561b\">HTMLの補完機能を保持しつつ、Better Jinjaの構文ハイライトも利用できるように、両方の機能を併用する設定の方法</h2><h3 id=\"1517dfd5-637f-4f0b-960e-3d18bfff8f9a\" name=\"1517dfd5-637f-4f0b-960e-3d18bfff8f9a\">プロジェクトフォルダ/.vscode/settings.json に</h3><br /><a href=\"https://note.com/kuwaharu/n/ne96f5bd82b5e\">続きをみる</a>",
     "creator_name": "",
     "creator_image": ""
   }
