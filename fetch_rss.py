@@ -51,11 +51,12 @@ articles = []
 
 # 最新の記事を取得
 for entry in feed.entries[:MAX_ITEMS]:
+    print(entry)
     articles.append(
         {
             "title": entry.title,
             "link": entry.link,
-            "published": entry.pubDate,
+            "published": entry.published,
         }
     )
 
