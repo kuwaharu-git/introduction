@@ -55,7 +55,7 @@ for entry in feed.entries[:MAX_ITEMS]:
         {
             "title": entry.title,
             "link": entry.link,
-            "pubDate": entry.putDate,
+            "published": entry.pubDate,
         }
     )
 
