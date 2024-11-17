@@ -1,5 +1,13 @@
 [
   {
+    "title": "Next.jsで自作ブログを作る②",
+    "link": "https://note.com/kuwaharu/n/n40d0a0f046fb",
+    "published": "Sun, 17 Nov 2024 11:22:59 +0900",
+    "summary": "<p id=\"ae69cf4f-b78b-4210-bfaf-de3413a4edcd\" name=\"ae69cf4f-b78b-4210-bfaf-de3413a4edcd\">こちらの続きです。</p><figure id=\"08f9c742-8202-4e2f-a501-77c2924b89fb\" name=\"08f9c742-8202-4e2f-a501-77c2924b89fb\"></figure><br /><a href=\"https://note.com/kuwaharu/n/n40d0a0f046fb\">続きをみる</a>",
+    "creator_name": "",
+    "creator_image": ""
+  },
+  {
     "title": "Next.jsで自作ブログを作る①",
     "link": "https://note.com/kuwaharu/n/n07b0630682de",
     "published": "Fri, 08 Nov 2024 00:17:53 +0900",
@@ -28,14 +36,6 @@
     "link": "https://note.com/kuwaharu/n/n7cd3e8d12c9f",
     "published": "Tue, 15 Oct 2024 14:32:34 +0900",
     "summary": "<p id=\"99b9752d-786c-4c26-9054-1979c4b50334\" name=\"99b9752d-786c-4c26-9054-1979c4b50334\">2024年10月13日、情報処理安全確保支援士の試験を受験してきました。前回の春期試験で応用情報技術者試験に合格していたので午前Iは免除で、午前IIから受験しました。</p><h2 id=\"f16cdfb6-b159-410b-a5e6-36624271d6c2\" name=\"f16cdfb6-b159-410b-a5e6-36624271d6c2\">午前Ⅱ自己採点結果</h2><br /><a href=\"https://note.com/kuwaharu/n/n7cd3e8d12c9f\">続きをみる</a>",
-    "creator_name": "",
-    "creator_image": ""
-  },
-  {
-    "title": "失敗談 sshコマンドでは接続できるのにvscodeで接続ができない場合の対処(mac)",
-    "link": "https://note.com/kuwaharu/n/nd4f50a0c0408",
-    "published": "Mon, 14 Oct 2024 15:11:19 +0900",
-    "summary": "<p id=\"590aaccb-cf07-4c44-be97-4da6740cbc15\" name=\"590aaccb-cf07-4c44-be97-4da6740cbc15\">自分でも何故このようなことが起きたかわからないのですがもしかしたら同じ現象で困る人がいるかもしれないので一応記事に…</p><h2 id=\"2479b48c-ae49-4e6f-8880-491d608c948a\" name=\"2479b48c-ae49-4e6f-8880-491d608c948a\">結論</h2><br /><a href=\"https://note.com/kuwaharu/n/nd4f50a0c0408\">続きをみる</a>",
     "creator_name": "",
     "creator_image": ""
   }
